@@ -31,7 +31,7 @@
 
             <div class="form-elem"> 
                 <label for="date-come">Ориентировочная дата прибытия к покупателю</label>
-                <input name="date-come" id="date-come" type="date" required placeholder="Дата*">
+                <input name="date-come" id="date-come" type="text" required placeholder="Дата*" onfocus="(this.type='date')">
             </div>
 
             <h3>Данные о водителе</h3>
@@ -44,14 +44,14 @@
                 <label for="passport">Паспортные данные</label>
                 <input 
                     name="passport-series" 
-                    id="passport" 
+                    id="passport-series" 
                     minlength="4" 
                     type="text" 
                     required placeholder="Серия"
                     pattern="\d{4}"/>
                 <input 
                     name="passport-number" 
-                    id="passport" 
+                    id="passport-num" 
                     minlength="6" 
                     type="text" 
                     required 
@@ -66,7 +66,7 @@
 
             <div class="form-elem">
                 <label for="when-issued">Когда выдан</label>
-                <input name="when-issued" id="when-issued" type="date" required placeholder="Когда выдан">
+                <input name="when-issued" id="when-issued" type="text" required placeholder="Когда выдан" onfocus="(this.type='date')">
             </div>
 
             <div class="form-elem">

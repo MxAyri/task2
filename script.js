@@ -15,14 +15,15 @@ if (LS.getItem('formData')){
     }
 }
 //Ограничение паспорта
-let passport = document.querySelectorAll('#passport');
+let passSeries = document.querySelector('#passport-series');
+let passNum = document.querySelector('#passport-num');
 regPas = /[^0-9]/g;
 
-passport[0].addEventListener('input', function(){
+passSeries.addEventListener('input', function(){
     this.value = this.value.substr(0,4);
     this.value = this.value.replace(regPas,'');
 })
-passport[1].addEventListener('input', function(){
+passNum.addEventListener('input', function(){
     this.value = this.value.substr(0,6);
     this.value = this.value.replace(regPas,'');
 })
