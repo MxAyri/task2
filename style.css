@@ -80,11 +80,11 @@ input:invalid {
   }
 
 .form-passport{
-    gap: 10px;
+    column-gap: 10px;
 }
 
 .form-passport input{
-    width: 80%;
+    width: 100%;
 }
 
 .form-passport label{
