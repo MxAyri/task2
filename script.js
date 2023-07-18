@@ -16,24 +16,27 @@ if (LS.getItem('formData')){
 }
 //Ограничение паспорта
 let passport = document.querySelectorAll('#passport');
+regPas = /[^0-9]/g;
 
-passport[0].oninput = function(){
+passport[0].addEventListener('input', function(){
     this.value = this.value.substr(0,4);
-}
-passport[1].oninput = function(){
+    this.value = this.value.replace(regPas,'');
+})
+passport[1].addEventListener('input', function(){
     this.value = this.value.substr(0,6);
-}
+    this.value = this.value.replace(regPas,'');
+})
 //Запрет на ввод цифр в ФИО
 let fio = document.querySelector('#fio');
 reg = /[0-9]/g;
-fio.oninput = function(){
+fio.addEventListener('input', function(){
     this.value = this.value.replace(reg,'');
-}
+})
 //Валидация букв гос номеров
 let gos = document.querySelector('#gos-number');
 regx = /[^АВЕКМНОРСТУХавекмнорстух0-9]/g;
-gos.oninput = function(){
+gos.addEventListener('input', function(){
     this.value = this.value.replace(regx,'');
     this.value = this.value.substr(0,9);
-}
+})
 // [A-Za-zБбГгДдЖжЗзИиЛлПпУуФфЦцЧчШшЪъЫыЬьЭэЮюЯяЙйЁёЩщ.,\/#!$%\^&\*;:{}=\-_`~()]/g

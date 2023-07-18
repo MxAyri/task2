@@ -22,23 +22,22 @@
                     required 
                     pattern="[АВЕКМНОРСТУХавекмнорстух][0-9]{3}[АВЕКМНОРСТУХавекмнорстух]{2}[0-9]{2,3}" 
                     placeholder="Укажите Гос-номер">
-                </input>
             </div>
 
             <div class="form-elem">  
                 <label for="car">Транспортное средство</label>
-                <input name="car" id="car" type="text" required placeholder="Транспортное средство"></input>
+                <input name="car" id="car" type="text" required placeholder="Транспортное средство">
             </div>
 
             <div class="form-elem"> 
                 <label for="date-come">Ориентировочная дата прибытия к покупателю</label>
-                <input name="date-come" id="date-come" type="date" required placeholder="Дата*"></input>
+                <input name="date-come" id="date-come" type="date" required placeholder="Дата*">
             </div>
 
             <h3>Данные о водителе</h3>
             <div class="form-elem">
                 <label for="fio">ФИО</label>
-                <input name="fio" id="fio" type="text" required placeholder="Укажите ФИО водителя"></input>
+                <input name="fio" id="fio" type="text" required placeholder="Укажите ФИО водителя">
             </div>
 
             <div class="form-elem form-passport">
@@ -49,9 +48,7 @@
                     minlength="4" 
                     type="text" 
                     required placeholder="Серия"
-                    pattern="\d{4}" 
-                    onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"/>
-                </input>
+                    pattern="\d{4}"/>
                 <input 
                     name="passport-number" 
                     id="passport" 
@@ -59,19 +56,17 @@
                     type="text" 
                     required 
                     placeholder="Номер" 
-                    pattern="\d{6}" 
-                    onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"/>
-                </input>
+                    pattern="\d{6}"/>
             </div>
 
             <div class="form-elem">
                 <label for="issued">Кем выдан</label>
-                <input name="issued" id="issued" type="text" required placeholder="Кем выдан"></input>
+                <input name="issued" id="issued" type="text" required placeholder="Кем выдан">
             </div>
 
             <div class="form-elem">
                 <label for="when-issued">Когда выдан</label>
-                <input name="when-issued" id="when-issued" type="date" required placeholder="Когда выдан"></input>
+                <input name="when-issued" id="when-issued" type="date" required placeholder="Когда выдан">
             </div>
 
             <div class="form-elem">
